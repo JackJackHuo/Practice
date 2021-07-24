@@ -85,7 +85,10 @@ c1.hell000()
 
 
 // function hello(params) {}
+//可以在任何地方callback函式
 
-// let hello() = function{}
+// let hello = function(){}
+//將函式宣告在某個變數的缺點是，只能在宣告的下面callback
+//不然仍是找不到變數
 
 // let hello = () => {} 利用箭頭語法綁定this到原物件
