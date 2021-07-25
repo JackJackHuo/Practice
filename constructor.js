@@ -16,17 +16,25 @@
 
 // 結構函數
 // 把多個物件打包
-// function cardName(addName , addPhone) {
+// function CardName(addName , addPhone) {
 //     this.name = addName
 //     this.phone = addPhone
+//     this.hello = function(){ //此函示會包含在物件內
+
+//        console.log('Hello',this.name)
+
+//     }
 // }
 
-// let a1 = new cardName("Jack" ,"0985")
-// let a2 = new cardName("Kevin","0977")
-// let a3 = new cardName("Jennifer","0911")
+// let a1 = new CardName("Jack" ,"0985")
+// let a2 = new CardName("Kevin","0977")
+// let a3 = new CardName("Jennifer","0911")
 // console.log(a1);
 // console.log(a2);
 // console.log(a3);
+// a1.hello()
+// a2.hello()
+// a3.hello()
 // ===========================================
 
 
@@ -41,15 +49,15 @@ class Card{
         //在constructor內新增bind語法如下行
         //this.hellooo = this.hello.bind(this) 
     }
-    //此hello函式並不是宣告在在constructor內
-    //只是宣告在protype上面
-    //a1物件裡看不到
-    //因此當有100個物件調用Card類別時
-    //都只是調用construction裡面的東西
-    //hello函式仍然只會存在一次
-    //不影響運算負擔
-    //但是this就無法綁定在hello函式上
-    hello(){
+    //此hello函式並不是宣告在constructor打包的物件內 
+    //只是宣告在protype上面 
+    //a1物件裡看不到 
+    //因此當有100個物件調用Card類別時 
+    //都只是產生100個包含construction裡面的物件 
+    //hello函式不在這100個物件當中 
+    //不影響運算負擔 
+    //可是this就無法綁定在hello函式上 
+    hello(){ //此函示不會包含在物件內
         console.log("hello", this.name);
     
     //綁定this方法二
