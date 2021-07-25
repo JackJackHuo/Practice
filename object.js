@@ -37,7 +37,7 @@ console.log(Object.entries(myPhone));//二維陣列，顯示物件所有內容 k
 
 //因為是陣列，所以可以用陣列方式取出
 
-//取出index = 0 的 ke
+//取出index = 0 的 key
 const keys = Object.keys(myPhone)
 console.log(keys[0]);
 //取出二維陣列
