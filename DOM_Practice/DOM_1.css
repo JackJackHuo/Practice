@@ -1,0 +1,10 @@
+
+#checklist li input{
+    display:none;
+}
+#checklist li.edit span{
+    display:none;
+}
+#checklist li.edit input{
+    display:initial;
+}
