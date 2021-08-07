@@ -33,7 +33,14 @@ for(let key in myPhone){
 //以陣列方式取出物件內容
 console.log(Object.keys(myPhone)); //一維陣列，顯示所有的key
 console.log(Object.values(myPhone));//一維陣列，顯示所有的value
-console.log(Object.entries(myPhone));//二維陣列，顯示物件所有內容 key + value
+console.log(Object.entries(myPhone));//二維陣列，顯示物件所有內容 
+// [ [key1 , value1] , [key2 , value2] ...[key n , value n] ] 
+
+//利用for..of同時迭代出key-value pair
+for(let [key , value] of Object.entries(myPhone)){
+    console.log(`${key} ==> ${value}`)
+}
+
 
 //因為是陣列，所以可以用陣列方式取出
 
