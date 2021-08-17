@@ -1,0 +1,15 @@
+.hide{
+    display:none;
+}
+img{
+    /* transform: scale(50%); */
+    position:absolute;
+    top:135px;
+    left:0;
+    z-index:-1;
+    
+} */
+li{
+    display:flex;
+    flex-flow: column nowrap;
+}
