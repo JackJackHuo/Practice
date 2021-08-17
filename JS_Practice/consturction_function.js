@@ -184,3 +184,4 @@ let c4 = {
 c4.hell000 = f1.hello
 //此時this已被綁定在class，無法被調用
 c4.hell000() 
+

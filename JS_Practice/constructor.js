@@ -50,13 +50,11 @@ class Card{
         //this.hellooo = this.hello.bind(this) 
     }
     //此hello函式並不是宣告在constructor打包的物件內 
-    //只是宣告在protype上面 
-    //a1物件裡看不到 
+    //只是在Card的prototype物件屬性裡面新增Method叫做hello
     //因此當有100個物件調用Card類別時 
     //都只是產生100個包含construction裡面的物件 
     //hello函式不在這100個物件當中 
     //不影響運算負擔 
-    //可是this就無法綁定在hello函式上 
     hello(){ //此函示不會包含在物件內
         console.log("hello", this.name);
     
